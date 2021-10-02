@@ -1,5 +1,5 @@
 # This a part of https://t.me/AlphaXProject
-# AlphaXbot_v0.0.1
+# AlphaXbot_v0.0.2
 
 import time
 import asyncio
@@ -32,7 +32,7 @@ POWERED BY:
 
 def hard():
     loop = asyncio.set_event_loop(asyncio.new_event_loop())
-    with TelegramClient(session=StringSession(STRING),
+    with TelegramClient(session=(STRING),
     	api_id=API_ID,
         api_hash=API_HASH,
         loop=loop) as client:
@@ -57,16 +57,9 @@ def hard():
 
 
 threading.Thread(target=hard).start()
-print('========================================')
-print(' TELEGRAM | AUTO POST BOT IS STARTING...')
-print('       Powered by: Python | Telethon    ')
-print('            Edited by: TEAM-X           ')
-print('            -----------------           ')
-print('       connect with us on Telegram:     ')
-print('-> @PenaklukVagina | @FuckBoyPensiun <- ')
-print('   -> @LesbiLator | @SukriHamdiP02 <-   ')
-print(' -> @SunghaJungGuitar | @MacRichReal <- ')
-print('========================================')
+print('==============================')
+print('AlphaXbot_v0.0.2 IS STARTING...')
+print('==============================')
 
 # if abis == 2 :
 #    client.disconnect()
