@@ -1,5 +1,5 @@
 # This a part of https://t.me/AlphaXProject
-# AlphaXbot_v0.0.3
+# AlphaXbot_v0.0.4
 
 import time
 import asyncio
@@ -14,7 +14,7 @@ from Utils import RABSEN
 
 api_id = API_ID
 api_hash = API_HASH
-sesi_file = STRING
+session = STRING
 
 dest_1 = 'https://t.me/tg_lpm'
 dest_2 = 'https://t.me/https://t.me/tgiklan'
@@ -26,8 +26,8 @@ isi_pesan = """🔥🔥🔥 KUMPULAN LINK 🔥🔥🔥
 
 📣 @ALPHAXPROJECT"""
 
+print("AlphaXbot_v0.0.4 is Starting...")
 def hard():
-	print("AlphaXbot_v0.0.3 is Starting...")
     loop = asyncio.set_event_loop(asyncio.new_event_loop())
     with TelegramClient(session=STRING,
     	api_id=API_ID,
@@ -55,7 +55,7 @@ def hard():
 
 threading.Thread(target=hard).start()
 print('==============================')
-print('AlphaXbot_v0.0.3 IS RUNNING...')
+print('AlphaXbot_v0.0.4 IS RUNNING...')
 print('==============================')
 
 # if abis == 2 :
