@@ -30,12 +30,15 @@ POWERED BY:
 
 def hard():
     loop = asyncio.set_event_loop(asyncio.new_event_loop())
-    with TelegramClient('AlphaXbot', api_id, api_hash, loop=loop) as client:
+    with TelegramClient(session=StringSession(STRING),
+    	api_id=API_ID,
+        api_hash=API_HASH,
+        loop=loop) as client:
 
         async def nungguin(w):
             await asyncio.sleep(w)
 
-        async def pythonclass(client, w):
+        async def alphax(client, w):
             while True:
                 await client.send_message(dest_1, {isi_pesan})
                 print (time.asctime(),'_','Success -> Messages Task 1 Sent!!!')
@@ -46,8 +49,8 @@ def hard():
 
 
         with client:
-            # parameter kedua Python Class adalah lamanya menunggu dalam detik jika 8 menit maka dalam detik 480
-            client.loop.create_task(pythonclass(client, 30))
+            # parameter kedua alphax adalah lamanya menunggu dalam detik jika 8 menit maka dalam detik 480
+            client.loop.create_task(alphax(client, 30))
             client.run_until_disconnected()
 
 
