@@ -1,0 +1,42 @@
+{
+  "name": "AlphaX",
+  "description": "Alpha X Test.",
+  "logo": "https://telegra.ph/file/36eb117322594ce579f66.jpg",
+  "keywords": [
+    "spmxubt",
+    "telegram",
+    "ub"
+  ],
+    "env": {
+      "STRING": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": true
+      },
+      "API_ID": {
+        "description": "Api ID",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Api Hash",
+        "value": "",
+        "required": true
+      }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
