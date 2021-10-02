@@ -17,7 +17,7 @@ api_hash = API_HASH
 session = STRING
 
 dest_1 = 'https://t.me/tg_lpm'
-dest_2 = 'https://t.me/https://t.me/tgiklan'
+dest_2 = 'https://t.me/tgiklan'
 
 
 
