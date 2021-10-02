@@ -9,6 +9,8 @@ import threading
 
 from telethon import TelegramClient, events, utils
 from Config import STRING, API_ID, API_HASH
+from Utils import RABSEN
+
 
 api_id = API_ID
 api_hash = API_HASH
